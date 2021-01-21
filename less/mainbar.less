@@ -3,10 +3,45 @@
 }
 .il-mainbar-triggers .btn-bulky,
 .il-mainbar-triggers .il-link.link-bulky {
-    background: @accent-primary;
+    background-color: @accent-primary;
+}
+.il-mainbar-triggers .btn-bulky:hover .bulky-label,
+.il-mainbar-triggers .il-link.link-bulky:hover .bulky-label,
+.il-mainbar-triggers .btn-bulky.engaged .bulky-label,
+.il-mainbar-triggers .il-link.link-bulky.engaged .bulky-label {
+    color: @mid-gray;
+}
+.il-mainbar-triggers {
+    background-color: @accent-primary;
+}
+.il-maincontrols-mainbar .btn-bulky,
+.il-maincontrols-mainbar .link-bulky, {
+    font-size: 10px;
+    hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
 }
 
-/*-------------------- T O O L S --------------------*/
+//TOOLS
 .il-mainbar-tools-button .btn-bulky.engaged {
     background-color: #d2dae5;
+}
+.il-mainbar-tools-entries .btn-bulky,
+.il-mainbar-tools-entries .btn-bulky,
+.il-mainbar-tools-entries .il-link.link-bulky {
+    background-color: @accent-secondary;;
+    color: white;
+}
+.il-mainbar-tools-button .btn-bulky {
+    background-color: @accent-secondary;
+    color: white;
+}
+
+//SLATE
+.il-maincontrols-slate .btn-bulky:hover,
+.il-maincontrols-slate .link-bulky:hover,
+.il-maincontrols-slate .btn-bulky.engaged,
+.il-maincontrols-slate .link-bulky.engaged {
+    background-color: darken(@il-slate-bulky-bg-color,15%);
 }

@@ -12,8 +12,11 @@
 		ILIAS 4 MainMenu Color: #c8e6ff;
 */
 @accent-primary:		#072555;
-@accent-secondary:		#007BAF;
-@accent-tertiary:		#494949;
+@accent-secondary:		#077CB0;
+@accent-tertiary:		#EAEFF6;
+
+@mid-gray:		#494949;
+@light-gray:		#737373;
 
 @brand-primary:		#072555;
 @brand-secondary:		#6ea03c;
@@ -34,11 +37,10 @@
 */
 @web-font-path:		"fonts/";
 
-@mid-gray:		#494949;
 @il-primary-container-bg:		white;
 @il-secondary-container-bg:		#f9f9f9;
 
-@il-highlight-bg:		#dfe3e6;
+@il-highlight-bg:		@accent-tertiary;
 /* @il-highlight-bg: saturate(lighten(@brand-warning, 34%), 80%); */
 /* @il-highlight-bg: lighten(@brand-secondary, 44%); */
 /* @il-highlight-bg: lighten(#21c5d8, 40%); */
@@ -207,14 +209,14 @@
 //** controls colors and bg colors of the "topbar" buttons
 @il-top-bar-link-bg:		lighten(@mid-gray, 20%);
 @il-top-bar-link-color:		lighten(@mid-gray, 70%);
-@il-top-bar-link-hover-bg:		lighten(@mid-gray, 42%);
+@il-top-bar-link-hover-bg:		@accent-tertiary;
 @il-top-bar-link-hover-color:		white;
 //** controls colors and bg colors of the "topbar" dropdowns
 @il-top-bar-dropdown-bg:		lighten(@mid-gray, 42%);
 @il-top-bar-dropdown-color:		lighten(@mid-gray, 70%);
 @il-top-bar-dropdown-link-bg:		transparent;
 @il-top-bar-dropdown-link-color:		lighten(@mid-gray, 70%);
-@il-top-bar-dropdown-link-hover-bg:		lighten(@brand-primary, 53%);
+@il-top-bar-dropdown-link-hover-bg:		@accent-tertiary;
 @il-top-bar-dropdown-link-hover-color:		lighten(@mid-gray, 42%);
 //** controls the height of the "logo" (that [ILIAS] thingy on top the page in the standard).
 @il-logo-height:		50px;
@@ -254,7 +256,7 @@
 @il-main-menu-dropdown-link-color:		lighten(@mid-gray, 10%);
 @il-main-menu-dropdown-link-hover-color:		darken(@gray-dark, 5%);
 @il-main-menu-dropdown-link-bg:		transparent;
-@il-main-menu-dropdown-link-hover-bg:		lighten(@brand-primary, 53%);
+@il-main-menu-dropdown-link-hover-bg:		@accent-tertiary;
 @il-main-menu-dropdown-header-bg:		#f3f3f3;
 
 //== Footer
@@ -533,7 +535,7 @@
 @dropdown-link-color:		lighten(@mid-gray, 10%);
 @dropdown-link-hover-color:		darken(@gray-dark, 5%);
 @dropdown-link-bg:		transparent;
-@dropdown-link-hover-bg:		lighten(@brand-primary, 53%);
+@dropdown-link-hover-bg:		@accent-tertiary;
 @dropdown-header-bg:		#f3f3f3;
 
 //** determines display of icons in dropdowns, 'none' for no display and 'inline' for display
@@ -645,7 +647,7 @@
 //** Background color used when a dropzone is highlighted (not when hovered).
 @il-dropzone-highlight-bg:		#FFFFD6;
 //** Background color used when a dropzone is hovered.
-@il-dropzone-hover-bg:		#FFF9BC;
+@il-dropzone-hover-bg:		@accent-tertiary;
 @il-dropzone-border-radius:		0px;
 @il-dropzone-border-style:		dashed;
 @il-dropzone-border-width:		1px;
@@ -866,7 +868,7 @@
 //##Workflow-steps have an icon indicating their status. The label changes color and size accordingly.
 @workflow-icon-size:		21px;
 @workflow-icon-font-color:		white;
-@workflow-available-text-color:		#333;
+@workflow-available-text-color:		@mid-gray;
 @workflow-unavailable-text-color:		#ddd;
 
 //== Message Boxes
