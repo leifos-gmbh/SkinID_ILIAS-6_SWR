@@ -19342,6 +19342,7 @@ footer {
 }
 .il-mainbar-tools-button .btn-bulky.engaged {
   background-color: #d2dae5;
+  color: #494949;
 }
 .il-mainbar-tools-entries .btn-bulky,
 .il-mainbar-tools-entries .btn-bulky,
@@ -19352,6 +19353,11 @@ footer {
 .il-mainbar-tools-button .btn-bulky {
   background-color: #077CB0;
   color: white;
+}
+.il-mainbar-tools-entries .btn-bulky.engaged,
+.il-mainbar-tools-entries .btn-bulky.engaged,
+.il-mainbar-tools-entries .il-link.link-bulky.engaged {
+  color: #494949;
 }
 .il-maincontrols-slate .btn-bulky:hover,
 .il-maincontrols-slate .link-bulky:hover,
@@ -19398,9 +19404,7 @@ div.ilProfile {
 .ilProfileHeader {
   position: relative;
   text-align: center;
-  display: inline-block;
   width: 100%;
-  padding-bottom: 40px;
 }
 .ilProfileImage {
   margin-left: auto;
@@ -19409,46 +19413,28 @@ div.ilProfile {
   float: none !important;
   left: 0;
   right: 0;
-  position: absolute;
 }
 .ilProfileImage img {
   border-radius: 100px;
   margin: 0px 0px 5px 0px !important;
 }
-.ilProfileButton {
+.ilProfileImage .ilProfileButton {
   margin: 5px;
 }
 .ilProfileInformation {
-  float: left;
-  text-align: left;
+  text-align: center;
+  display: flex;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
 }
-.ilProfilePortfolio {
-  float: right;
+.ilProfileInformation .ilProfileSection {
   text-align: left;
 }
 div.ilProfileSection {
   margin: 20px;
   font-size: 100%;
 }
-/*Eigener Standort*/
-.ilProfileMap {
-  display: inline-block;
-  width: 100%;
-  padding-bottom: 40px;
-}
-#user_map {
-  max-width: 350px;
-  max-height: 230px;
-  width: inherit !important;
-  height: inherit !important;
-}
-/*Badges*/
-.ilProfileBadges {
-  display: inline-block;
-  width: 100%;
-  padding-bottom: 40px;
-}
-/*Mobile Ansicht*/
 @media only screen and (max-width: 767px) {
   div.ilProfile {
     min-width: inherit !important;
@@ -19532,33 +19518,6 @@ div.ilProfileSection {
 .alert {
   margin-top: 20px;
 }
-.btn-primary {
-  color: white;
-  background-color: #077CB0;
-  border: none;
-}
-.btn-primary:hover {
-  background-color: #06628b;
-  border: none;
-}
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-  background-color: #06628b;
-  border: none;
-}
-.btn-primary:active:hover,
-.btn-primary.active:hover,
-.open > .dropdown-toggle.btn-primary:hover,
-.btn-primary:active:focus,
-.btn-primary.active:focus,
-.open > .dropdown-toggle.btn-primary:focus,
-.btn-primary:active.focus,
-.btn-primary.active.focus,
-.open > .dropdown-toggle.btn-primary.focus {
-  background-color: #06628b;
-  border: none;
-}
 .btn-default {
   color: white;
   background-color: #077CB0;
@@ -19587,18 +19546,45 @@ div.ilProfileSection {
   color: white;
   background-color: #06628b;
 }
-.btn-primary {
-  border-radius: 5px;
-}
 .btn-default:focus,
 .btn-default.focus {
   color: white;
   background-color: #06628b;
 }
-.split-btn-default.pull-left .btn-primary {
-  border-bottom-right-radius: 0 !important;
-  border-top-right-radius: 0 !important;
-  margin-bottom: 1px;
+.btn-primary {
+  border-radius: 5px;
+}
+.btn-primary {
+  color: white;
+  background-color: #077CB0;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #06628b;
+  border: none;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-color: #06628b;
+  border: none;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  background-color: #06628b;
+  border: none;
+}
+.split-btn-default.pull-left {
+  background-color: #077CB0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .dropdown-header {
   padding: 3px 10px;
@@ -19627,6 +19613,12 @@ div.ilProfileSection {
   border-left: 10px solid white;
 }
 .form-horizontal .help-block {
+  color: #494949;
+}
+.il-standard-form .il-standard-form-header,
+.il-standard-form .il-standard-form-footer,
+.il-standard-form .il-section-input-header {
+  background-color: white;
   color: #494949;
 }
 .il_InfoScreenPropertyValue {
@@ -19741,6 +19733,9 @@ div.ilTableFilterLabel {
 }
 .jstree.jstree-default a {
   font-size: 100%;
+}
+.il-workflow-header .il-workflow-title {
+  background-color: white;
 }
 /*		Color scheme
 		Dark BLue: #0f2152;
