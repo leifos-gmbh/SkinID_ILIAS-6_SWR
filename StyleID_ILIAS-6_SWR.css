@@ -19641,6 +19641,11 @@ div.ilProfileSection {
 .icon.file.medium.outlined {
   filter: none !important;
 }
+.icon.crsr.medium.outlined {
+  height: 38px;
+  margin-top: -1px;
+  filter: none !important;
+}
 .panel-secondary .panel-body {
   background: #f9f9f9;
 }
