@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<template xmlns="http://www.w3.org" version="0.138" name="Skin_ILIAS-6_SWR">
+<template xmlns="http://www.w3.org" version="0.160" name="Skin_ILIAS-6_SWR">
   <style id="StyleID_ILIAS-6_SWR" name="Style_ILIAS-6_SWR" image_directory="images" css_file="StyleID_ILIAS-6_SWR" sound_directory="sound" font_directory="fonts"/>
 </template>
