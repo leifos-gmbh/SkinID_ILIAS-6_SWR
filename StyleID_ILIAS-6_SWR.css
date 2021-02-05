@@ -19547,6 +19547,11 @@ p.ilStartupSection {
   margin-left: auto;
   margin-right: auto;
 }
+@media only screen and (max-width: 767px) {
+  p.ilStartupSection {
+    width: auto;
+  }
+}
 .alert {
   margin-top: 20px;
 }
