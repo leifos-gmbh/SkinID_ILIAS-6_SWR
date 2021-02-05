@@ -3,27 +3,10 @@
     top: 93px;
     position: fixed;
     width: 100%;
-    margin: -35px 0 0 -95px;
-    margin-left: -95px;
+    margin: 0 0 0 -15px;
     padding: 35px 0 0 0;
-    z-index: 997;
     background: no-repeat url(../../skin/SkinID_ILIAS-6_SWR/images/startup_screen/startup_bg.jpg);
     background-size: cover;
-}
-.startup_page_footer {
-    background-color: white;
-    text-align: center;
-    border-top: 1px solid #ddd;
-    height: 45px;
-    padding: 10px 0 10px 5px;
-    color: #737373;
-    font-size: 0.9em;
-    position: fixed;
-    width: 100%;
-    bottom: 0px;
-    a {
-    color: #737373;
-    }
 }
 @media only screen and (max-width: 767px) {
     .startup_page {
@@ -34,12 +17,14 @@
 .ilStartupSection {
     text-align: center;
     padding: 0px;
+    .form-horizontal {
+        margin-bottom: 10px;
+    }
     form.form-horizontal {
         margin-left: auto;
         margin-right: auto;
         padding-top: 45px;
         background-color: transparent;
-        margin-bottom: 10px;
     }
     .ilFormHeader {
         background-color: #f3b131;
@@ -100,4 +85,11 @@
          background-color: darken(#f3b131,15%);
          }
     }
+}
+p.ilStartupSection {
+    background-color: #F9d898;
+    width: 40em;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
